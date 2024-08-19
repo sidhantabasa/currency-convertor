@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     const fetchExchangeRates = async () => {
-      try { 
+      try {  
         const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
         const result = await response.json();
         console.log(result.rates);
